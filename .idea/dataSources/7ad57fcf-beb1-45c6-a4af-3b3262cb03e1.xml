@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="TM_DB@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
+    <root id="1"/>
+    <database id="2" parent="1" name="TM_DB">
+      <ObjectId>16393</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-04-01.08:44:36.347</IntrospectionTimestamp>
+      <IntrospectionStateNumber>672</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>12113</ObjectId>
+    </schema>
+    <table id="9" parent="3" name="filetable">
+      <ObjectId>16719</ObjectId>
+      <StateNumber>672</StateNumber>
+    </table>
+    <table id="10" parent="3" name="usertable">
+      <ObjectId>16701</ObjectId>
+      <StateNumber>664</StateNumber>
+    </table>
+    <column id="11" parent="9" name="fileid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>672</StateNumber>
+    </column>
+    <column id="12" parent="9" name="filetype">
+      <Position>2</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>672</StateNumber>
+    </column>
+    <column id="13" parent="9" name="userowner">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>672</StateNumber>
+    </column>
+    <index id="14" parent="9" name="filetable_pkey">
+      <ObjectId>16722</ObjectId>
+      <ColNames>fileid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="15" parent="9" name="filetable_pkey">
+      <ObjectId>16723</ObjectId>
+      <ColNames>fileid</ColNames>
+      <UnderlyingIndexName>filetable_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="16" parent="10" name="userid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>664</StateNumber>
+    </column>
+    <column id="17" parent="10" name="useremail">
+      <Position>2</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>664</StateNumber>
+    </column>
+    <column id="18" parent="10" name="userphotoid">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>664</StateNumber>
+    </column>
+    <column id="19" parent="10" name="userlogin">
+      <Position>4</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>664</StateNumber>
+    </column>
+    <column id="20" parent="10" name="username">
+      <Position>5</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>664</StateNumber>
+    </column>
+    <column id="21" parent="10" name="userpassword">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>664</StateNumber>
+    </column>
+    <index id="22" parent="10" name="usertable_pkey">
+      <ObjectId>16707</ObjectId>
+      <ColNames>userid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="23" parent="10" name="uk_efj8sinnu8oktyedaf9m6ql37">
+      <ObjectId>16709</ObjectId>
+      <ColNames>useremail</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="24" parent="10" name="uk_l2g8rov61y42yf9y945frgd6k">
+      <ObjectId>16711</ObjectId>
+      <ColNames>userlogin</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="25" parent="10" name="usertable_pkey">
+      <ObjectId>16708</ObjectId>
+      <ColNames>userid</ColNames>
+      <UnderlyingIndexName>usertable_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="26" parent="10" name="uk_efj8sinnu8oktyedaf9m6ql37">
+      <ObjectId>16710</ObjectId>
+      <ColNames>useremail</ColNames>
+      <UnderlyingIndexName>uk_efj8sinnu8oktyedaf9m6ql37</UnderlyingIndexName>
+    </key>
+    <key id="27" parent="10" name="uk_l2g8rov61y42yf9y945frgd6k">
+      <ObjectId>16712</ObjectId>
+      <ColNames>userlogin</ColNames>
+      <UnderlyingIndexName>uk_l2g8rov61y42yf9y945frgd6k</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
